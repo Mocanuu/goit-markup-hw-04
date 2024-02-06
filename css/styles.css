@@ -155,7 +155,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(..//images/people-office\ 1.png);
+    url(..//images/people-office.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -546,10 +546,10 @@ img {
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
+  margin-bottom: 16px;
   font-weight: 500;
   line-height: 1.5em;
   letter-spacing: 0.32px;
-  margin-bottom: 16px;
 }
 
 .social-media-footer-list {
@@ -618,18 +618,18 @@ img {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
+  margin-bottom: 72px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
-  margin-bottom: 72px;
 }
 
 .customers-logos-item {
   width: 168px;
   height: 88px;
-  width: calc((100% - 120px) / 6);
+  flex-basis: calc((100% - 120px) / 6);
 }
 
 .customers-link {
