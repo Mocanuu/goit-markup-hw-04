@@ -356,10 +356,13 @@ img {
 }
 
 .footer-container {
-  width: 1158px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-right: 120px;
+}
+
+.socials-whole {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .studio-word-footer-link {
@@ -551,8 +554,10 @@ img {
 
 .social-media-footer-list {
   text-decoration: none;
+  list-style: none;
   display: flex;
   gap: 16px;
+  padding-left: 0%;
 }
 
 .social-media-footer-icon {
@@ -584,9 +589,68 @@ img {
 .whole-footer {
   display: flex;
   align-items: baseline;
-  margin-right: 120px;
   width: 1158px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.customer-section-container {
+  text-decoration: none;
+}
+
+.customers-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-logos-list {
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  gap: 24px;
+  height: 88px;
+}
+
+.customers-word {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.customers-logos-item {
+  width: 168px;
+  height: 88px;
+  width: calc((100% - 120px) / 6);
+}
+
+.customers-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e8f99;
+  width: 168px;
+  height: 88px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border-color: #404bbf;
+  color: #404bbf;
+}
+
+.svg-logo {
+  fill: currentColor;
 }
