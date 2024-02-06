@@ -94,6 +94,7 @@ img {
 }
 
 .link-href-apps {
+  display: block;
   text-decoration: none;
   padding: 24px 0 24px;
 }
@@ -150,7 +151,6 @@ img {
 }
 
 .hero-section-list {
-  background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -302,6 +302,8 @@ img {
   width: 264px;
   border-radius: 0px 0px 4px 4px;
   flex-basis: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .people-name-job {
@@ -424,14 +426,16 @@ img {
   background-color: #404bbf;
   color: var(--WHITE);
   border: 1px solid transparent;
-  box-shadow: 0px 3px 2px 0px #1a1a1a;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .nav-button:focus {
   background-color: #404bbf;
   color: var(--WHITE);
   border: 1px solid transparent;
-  box-shadow: 0px 3px 2px 0px #1a1a1a;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .images-list {
@@ -483,8 +487,10 @@ img {
   text-decoration: none;
 }
 
-.app-name:hover .app-name:focus {
-  box-shadow: 0px 10px 0px 0px black;
+.link-href-apps:hover,
+.link-href-apps:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .images-single {
@@ -501,6 +507,7 @@ img {
   height: 112px;
   border-radius: 4px;
   background-color: var(--CLOUD);
+  margin-bottom: 8px;
 }
 
 .socials-ellipse {
@@ -513,6 +520,11 @@ img {
   justify-content: center;
 }
 
+.socials-ellipse:hover,
+.socials-ellipse:focus {
+  background-color: #404bbf;
+}
+
 .socials-list-ellipse {
   display: flex;
   justify-content: center;
@@ -520,6 +532,10 @@ img {
   gap: 24px;
   list-style: none;
   padding: 0;
+}
+
+.social-people-icons {
+  fill: #f4f4fd;
 }
 
 .social-media-footer {
@@ -534,11 +550,13 @@ img {
 }
 
 .social-media-footer-list {
+  text-decoration: none;
   display: flex;
   gap: 16px;
 }
 
 .social-media-footer-icon {
+  text-decoration: none;
   width: 40px;
   height: 40px;
 }
@@ -546,11 +564,17 @@ img {
 .footer-icon {
   display: flex;
   align-items: center;
+  text-decoration: none;
   background-color: #4d5ae5;
   border-radius: 50%;
   width: 100%;
   height: 100%;
   justify-content: center;
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+  background-color: #31d0aa;
 }
 
 .social-link-icon {
@@ -559,7 +583,8 @@ img {
 
 .whole-footer {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  margin-right: 120px;
   width: 1158px;
   margin: 0 auto;
   padding-left: 15px;
